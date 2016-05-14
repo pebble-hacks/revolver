@@ -1,0 +1,29 @@
+{
+  "uuid": "d9ef1ba8-2011-4f1e-8102-d995a3f491e0",
+  "shortName": "Revolver",
+  "longName": "Revolver",
+  "companyName": "Pebble",
+  "versionLabel": "1.2",
+  "sdkVersion": "3",
+  "capabilities": ["configurable"],
+  "targetPlatforms": ["chalk"],
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "theme_color": 0
+  },
+  "preferences": {
+    "description": "Revolver Settings",
+    "embedded": true,
+    "items": [{
+      "name": "theme_color",
+      "title": "Theme color",
+      "type": "color",
+      "default": "0xFF0000"
+    }]
+  },
+  "resources": {
+    "media": []
+  }
+}
