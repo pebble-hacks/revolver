@@ -1,3 +1,15 @@
+# Revolver
+
+One of the official Pebble watchfaces released with Pebble Time Round.
+
+You can download [Revolver from the Pebble
+AppStore](https://apps.getpebble.com/en_US/application/560c28ba4bf0aca96e000089).
+
+# License
+
+Copyright (c) 2016 Pebble Technology Corp.
+
+````
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -672,3 +684,4 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>.
+````
