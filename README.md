@@ -5,6 +5,12 @@ One of the official Pebble watchfaces released with Pebble Time Round.
 You can download [Revolver from the Pebble
 AppStore](https://apps.getpebble.com/en_US/application/560c28ba4bf0aca96e000089).
 
+This project uses
+[pebble-autoconfig](https://github.com/gregoiresage/pebble-autoconfig). Read
+[pebble-autoconfig Wiki](https://github.com/gregoiresage/pebble-autoconfig) for
+more information.
+
+
 # License
 
 Copyright (c) 2016 Pebble Technology Corp.
