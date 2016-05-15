@@ -18,7 +18,7 @@
 
 */
 
-#include <autoconfig.h>
+#include "enamel.h"
 #include "watch_model.h"
 
 static Window *window;
@@ -138,7 +138,7 @@ static void window_unload(Window *window) {
 }
 
 static void init(void) {
-  autoconfig_init(100, 100);
+  enamel_init(0, 0);
   window = window_create();
   window_set_window_handlers(window, (WindowHandlers) {
     .load = window_load,
@@ -151,7 +151,7 @@ static void init(void) {
 }
 
 static void deinit(void) {
-  autoconfig_deinit();
+  enamel_deinit();
   window_destroy(window);
 }
 

@@ -19,6 +19,7 @@
 */
 
 #include "watch_model.h"
+#include "enamel.h"
 
 typedef struct {
   DotState start_state;
@@ -168,15 +169,14 @@ void watch_model_start_intro(void) {
 
 ColorConfig prv_make_current_color_config() {
   return (ColorConfig) {
-    .center_color = getTheme_color(),
-    .hour_dot_color = getTheme_color(),
+    .center_color = enamel_get_theme_color(),
+    .hour_dot_color = enamel_get_theme_color(),
     .minute_dot_color = GColorWhite,
     .neutral_dot_color = GColorDarkGray,
   };
 }
 
 static void prv_msg_received_handler(DictionaryIterator *iter, void *context) {
-  autoconfig_in_received_handler(iter, context);
   ColorConfig current_config = prv_make_current_color_config();
   watch_model_handle_color_config_change(&current_config);
 }
@@ -192,6 +192,6 @@ void watch_model_init(void) {
   }
   CenterState start_center_state = (CenterState) { 0 };
   watch_model_handle_center_change(&start_center_state);
-  app_message_register_inbox_received(prv_msg_received_handler);
+  enamel_register_custom_inbox_received(prv_msg_received_handler); 
 }
 
