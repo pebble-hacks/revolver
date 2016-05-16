@@ -1,0 +1,16 @@
+[
+{
+  "type": "section",
+  "items": [
+    {
+      "type": "color",
+      "id": "theme_color",
+      "appKey": "theme_color",
+      "defaultValue": "FF0000",
+      "label": "Theme color",
+      "sunlight": true
+    }
+  ]
+},
+{ "type": "submit", "defaultValue": "Save" }
+]

@@ -7,21 +7,12 @@
   "sdkVersion": "3",
   "capabilities": ["configurable"],
   "targetPlatforms": ["chalk"],
+  "enableMultiJS": true,
   "watchapp": {
     "watchface": true
   },
   "appKeys": {
     "theme_color": 0
-  },
-  "preferences": {
-    "description": "Revolver Settings",
-    "embedded": true,
-    "items": [{
-      "name": "theme_color",
-      "title": "Theme color",
-      "type": "color",
-      "default": "0xFF0000"
-    }]
   },
   "resources": {
     "media": []

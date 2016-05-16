@@ -18,7 +18,6 @@
 
 */
 
-#include "autoconfig.h"
 #include <pebble.h>
 
 #define NUM_DOTS_TOTAL (12)
